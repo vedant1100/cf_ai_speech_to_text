@@ -1,0 +1,19 @@
+name = "ai-voice-chat"
+main = "src/index.tsx"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./public"
+
+[[durable_objects.bindings]]
+name = "CHAT_SESSIONS"
+class_name = "ChatSession"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ChatSession"]
+
+[vars]
+# Set via `wrangler secret put GEMINI_API_KEY`
+# GEMINI_API_KEY = "AIzaSyBn-KyCdrMFxj_JViDLnBzOOghSYpq4p3s"
