@@ -4,7 +4,6 @@
 - Features
 - Installation
 - Steps
-- 
 
 ---
 ## 📌 Introduction
